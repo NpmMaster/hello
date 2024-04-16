@@ -15,3 +15,6 @@ let cyan = new App('Hello world!', option='cyan')
 let builtin = new App('Hey!', option='builtin')
 //Output expected: Hey! (With blue,red,green)
 ```
+
+# Coloured Content
+**This function prints an file content in coloured text**
