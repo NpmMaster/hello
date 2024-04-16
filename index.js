@@ -1,2 +1,2 @@
-const { App } = require('./wnc_utils/util.js')
+require('./wnc_utils/util.js')
 
