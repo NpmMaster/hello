@@ -1,0 +1,19 @@
+{
+  "name": "win-color",
+  "version": "1.0.0",
+  "description": "Print any color in your terminal!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NpmMaster/hello.git"
+  },
+  "author": "NpmMaster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NpmMaster/hello/issues"
+  },
+  "homepage": "https://github.com/NpmMaster/hello#readme"
+}
