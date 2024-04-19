@@ -6,6 +6,17 @@ $${\color{blue}Blue}$$
 $${\color{red}red}$$
 $${\color{magenta}Magenta}$$
 
+# Common Colors
+```js
+//Common colors
+
+let blue = new App('Blue Color', option='blue')
+let magenta = new App('Magenta Color', option='magenta')
+
+
+
+``` 
+
 # Builtin
 Builtins
 ```js
