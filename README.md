@@ -18,3 +18,4 @@ let builtin = new App('Hey!', option='builtin')
 
 # Coloured Content
 **This function prints an file content in coloured text**
+[COMING SOON]
