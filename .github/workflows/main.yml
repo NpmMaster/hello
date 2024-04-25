@@ -10,13 +10,11 @@ jobs:
   push_coffe:
     runs-on: ubuntu-latest
     steps:
-      - name: Configure Setup
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
-      - name: Main Functions 
-        run: echo "An coffe was pushed ☕"
-      - name: Install dependencies
+      - name: Coffe setup
         run: |
+          echo "An coffe was pushed ☕"
           echo "${{ github.actor }} Has ended his coffe 😋"
           npm list --depth=0 | grep '├─' | awk -F'@' '{print $1 "@" $2}' > reqs.txt
           echo "Installed Cup Dependencies 🧋"
