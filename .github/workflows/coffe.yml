@@ -5,7 +5,7 @@ on: [push]
 
 
 jobs:
-  Push_Coffe:
+  push_coffe:
     runs-on: ubuntu-latest
     steps:
     - name: Main functions
