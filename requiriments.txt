@@ -1,3 +1,0 @@
-win-color@1.0.0 /workspaces/win-color
-└── (empty)
-
