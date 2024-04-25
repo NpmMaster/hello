@@ -10,16 +10,13 @@ jobs:
     steps:
       - name: Configure Setup
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
       - name: Main Functions 
+        uses: actions/setup-node@v2
       - run: echo "An coffe was pushed ☕"
-      - uses: actions/checkout@v3
       - run: echo "${{ github.actor }} Has ended his coffe 😋"
-      - uses: actions/checkout@v3
       - name: Install dependencies
-      - run: |
+        run: |
           npm list --depth=0 | grep '├─' | awk -F'@' '{print $1 "@" $2}' > reqs.txt
           echo "Installed Cup Dependencies 🧋"
-      - uses: actions/checkout@v3
 
 
