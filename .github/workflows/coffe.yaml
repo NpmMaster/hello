@@ -1,4 +1,4 @@
-name: Get a coffe
+name: Push Coffe
 run-name: ${{ github.actor }} is drinking an coffe ☕
 
 on: [push]
@@ -8,18 +8,15 @@ jobs:
   push_coffe:
     runs-on: ubuntu-latest
     steps:
-      - name: Main functions
-        - run: echo "Push Coffe Was Summoned🌊"
-        - run: echo "This cafeteria was summoned in ${{ runner.os }} Thank you CoffeHub!"
-        - run: echo "Cafeteria is almost closing.. ${{ runner.os }}"
-        - run: echo "Cafeteria closed :("
-      - uses: actions/checkout@v3
-      with:
-        node-version: 13.
+      - name: Configure Setup
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v2
+      - name: Main Functions 
+        - run: echo "An coffe was pushed ☕"
+        - run: echo "${{ github.actor }} Has ended his coffe 😋"
       - name: Install dependencies
-        run |
-          npm install -g $(cat reqs.txt)
-      - run: echo "Installed dependencies With Sucess!"
-      - name: End of process
-       - run: echo "Process ended."
+        - run: |
+          npm list --depth=0 | grep '├─' | awk -F'@' '{print $1 "@" $2}' > reqs.txt
+          echo "Installed Cup Dependencies 🧋"
+
 
