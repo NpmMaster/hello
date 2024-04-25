@@ -1,13 +1,14 @@
 name: Get a coffe
-run-name: $${{ github.actor }} is drinking an coffe ":coffe:"
+run-name: ${{ github.actor }} is drinking an coffe ☕
 
 on: [push]
 
 
 jobs:
-  Drink coffe:
+  Push Coffe:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This cafeteria was summoned in ${{ runner.os }} Thank you CoffeHub!"
-      - run: echo "Cafeteria is almost closing.. ${{ runner.os }}"
-      - run: echo "Cafeteria closed :( :hushed:"
+     - run: echo "Push Coffe Was Summoned🌊"
+     - run: echo "This cafeteria was summoned in ${{ runner.os }} Thank you CoffeHub!"
+     - run: echo "Cafeteria is almost closing.. ${{ runner.os }}"
+     - run: echo "Cafeteria closed :("
